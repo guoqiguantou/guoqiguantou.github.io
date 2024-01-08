@@ -1,0 +1,764 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13.内置类型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14.装包和拆包.html" />
+    
+    
+    <link rel="prev" href="12.条件类型.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../1、计算机基础/README.md">
+            
+                <span>
+            
+                    
+                    一、计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="../../1、计算机基础/1、编译原理/">
+            
+                <a href="../../1、计算机基础/1、编译原理/">
+            
+                    
+                    1、编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2" data-path="../../1、计算机基础/2、计算机网络/">
+            
+                <a href="../../1、计算机基础/2、计算机网络/">
+            
+                    
+                    2、计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.3" data-path="../../1、计算机基础/3、实现http/">
+            
+                <a href="../../1、计算机基础/3、实现http/">
+            
+                    
+                    3、实现http
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.3.1" data-path="../../1、计算机基础/3、typeScript体系课/1.环境配置和搭建.md">
+            
+                <span>
+            
+                    
+                    1.环境配置和搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.4" data-path="../../1、计算机基础/4、https/">
+            
+                <a href="../../1、计算机基础/4、https/">
+            
+                    
+                    4、https
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../README.md">
+            
+                <span>
+            
+                    
+                    二、前端基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../1、js基础/">
+            
+                <a href="../1、js基础/">
+            
+                    
+                    1、js基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../2、ecmaScript/">
+            
+                <a href="../2、ecmaScript/">
+            
+                    
+                    2、ecmaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3、typeScript体系课
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.3.1" data-path="1.环境配置和搭建.html">
+            
+                <a href="1.环境配置和搭建.html">
+            
+                    
+                    1.环境配置和搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.2" data-path="2.基础类型.html">
+            
+                <a href="2.基础类型.html">
+            
+                    
+                    2.基础类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.3" data-path="3.类型推导.html">
+            
+                <a href="3.类型推导.html">
+            
+                    
+                    3.类型推导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.4" data-path="4.函数类型.html">
+            
+                <a href="4.函数类型.html">
+            
+                    
+                    4.函数类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.5" data-path="5.类.html">
+            
+                <a href="5.类.html">
+            
+                    
+                    5.类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.6" data-path="6.接口.html">
+            
+                <a href="6.接口.html">
+            
+                    
+                    6.接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.7" data-path="7.泛型.html">
+            
+                <a href="7.泛型.html">
+            
+                    
+                    7.泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.8" data-path="8.兼容性.html">
+            
+                <a href="8.兼容性.html">
+            
+                    
+                    8.兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.9" data-path="9.类型保护.html">
+            
+                <a href="9.类型保护.html">
+            
+                    
+                    9.类型保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.10" data-path="10.类型推断.html">
+            
+                <a href="10.类型推断.html">
+            
+                    
+                    10.类型推断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.11" data-path="11.交叉类型.html">
+            
+                <a href="11.交叉类型.html">
+            
+                    
+                    11.交叉类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.12" data-path="12.条件类型.html">
+            
+                <a href="12.条件类型.html">
+            
+                    
+                    12.条件类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.2.3.13" data-path="13.内置类型.html">
+            
+                <a href="13.内置类型.html">
+            
+                    
+                    13.内置类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.14" data-path="14.装包和拆包.html">
+            
+                <a href="14.装包和拆包.html">
+            
+                    
+                    14.装包和拆包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.15" data-path="15.自定义类型.html">
+            
+                <a href="15.自定义类型.html">
+            
+                    
+                    15.自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.16" data-path="16.unknown.html">
+            
+                <a href="16.unknown.html">
+            
+                    
+                    16.unknown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.17" data-path="17.模块和命名空间.html">
+            
+                <a href="17.模块和命名空间.html">
+            
+                    
+                    17.模块和命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.18" data-path="18.类型声明.html">
+            
+                <a href="18.类型声明.html">
+            
+                    
+                    18.类型声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.3.19" data-path="19.扩展全局变量类型.html">
+            
+                <a href="19.扩展全局变量类型.html">
+            
+                    
+                    19.扩展全局变量类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.4" data-path="../4、jwt/">
+            
+                <a href="../4、jwt/">
+            
+                    
+                    4、jwt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.5" data-path="../9、浏览器渲染原理/">
+            
+                <a href="../9、浏览器渲染原理/">
+            
+                    
+                    9、浏览器渲染原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >13.内置类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="13&#x5185;&#x7F6E;&#x7C7B;&#x578B;">13.&#x5185;&#x7F6E;&#x7C7B;&#x578B;</h1>
+<h2 id="&#x4E00;partial&#x8F6C;&#x5316;&#x53EF;&#x9009;&#x5C5E;&#x6027;">&#x4E00;.Partial&#x8F6C;&#x5316;&#x53EF;&#x9009;&#x5C5E;&#x6027;</h2>
+<pre><code>interface Company {
+    num: number
+}
+interface Person {
+    name: string,
+    age: string,
+    company: Company
+}
+// type Partial&lt;T&gt; = { [K in keyof T]?: T[K] }; &#x5B9E;&#x73B0;&#x539F;&#x7406;
+type PartialPerson = Partial&lt;Person&gt;;
+</code></pre><blockquote>
+<p>&#x904D;&#x5386;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x5C06;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A;&#x53EF;&#x9009;&#x5C5E;&#x6027;,&#x4F46;&#x662F;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x6DF1;&#x5EA6;&#x8F6C;&#x5316;!</p>
+</blockquote>
+<pre><code>type DeepPartial&lt;T&gt; = {
+    [K in keyof T]?: T[K] extends object ? DeepPartial&lt;T[K]&gt; : T[K]
+}
+type DeepPartialPerson = DeepPartial&lt;Person&gt;;
+</code></pre><blockquote>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x6DF1;&#x5EA6;&#x8F6C;&#x5316;,&#x5982;&#x679C;&#x503C;&#x662F;&#x5BF9;&#x8C61;&#x7EE7;&#x7EED;&#x6DF1;&#x5EA6;&#x8F6C;&#x5316;&#x3002;</p>
+</blockquote>
+<h2 id="&#x4E8C;required&#x8F6C;&#x5316;&#x5FC5;&#x586B;&#x5C5E;&#x6027;">&#x4E8C;.Required&#x8F6C;&#x5316;&#x5FC5;&#x586B;&#x5C5E;&#x6027;</h2>
+<pre><code>interface Company {
+    num: number
+}
+interface Person {
+    name: string,
+    age: string,
+    company: Company
+}
+type PartialPerson = Partial&lt;Person&gt;;
+type Required&lt;T&gt; = {[K in keyof T]-?:T[K]} 
+type RequiredPerson = Required&lt;PartialPerson&gt;
+</code></pre><blockquote>
+<p>&#x5C06;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x8F6C;&#x5316;&#x6210;&#x5FC5;&#x586B;&#x5C5E;&#x6027;</p>
+</blockquote>
+<h2 id="&#x4E09;readonly&#x8F6C;&#x5316;&#x4EC5;&#x8BFB;&#x5C5E;&#x6027;">&#x4E09;.Readonly&#x8F6C;&#x5316;&#x4EC5;&#x8BFB;&#x5C5E;&#x6027;</h2>
+<pre><code>type Readonly&lt;T&gt; = { readonly [K in keyof T]: T[K] }
+type RequiredPerson = Readonly&lt;Person&gt;
+</code></pre><blockquote>
+<p>&#x5C06;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x53D8;&#x4E3A;&#x4EC5;&#x8BFB;&#x72B6;&#x6001;</p>
+</blockquote>
+<h2 id="&#x56DB;pick&#x6311;&#x9009;&#x6240;&#x9700;&#x7684;&#x5C5E;&#x6027;">&#x56DB;.Pick&#x6311;&#x9009;&#x6240;&#x9700;&#x7684;&#x5C5E;&#x6027;</h2>
+<pre><code>type Pick&lt;T, U extends keyof T&gt; = { [P in U]: T[P] }
+type PickPerson = Pick&lt;Person, &apos;name&apos; | &apos;age&apos;&gt;
+</code></pre><blockquote>
+<p>&#x5728;&#x5DF2;&#x6709;&#x7C7B;&#x578B;&#x4E2D;&#x6311;&#x9009;&#x6240;&#x9700;&#x5C5E;&#x6027;</p>
+</blockquote>
+<h2 id="&#x4E94;record&#x8BB0;&#x5F55;&#x7C7B;&#x578B;">&#x4E94;.Record&#x8BB0;&#x5F55;&#x7C7B;&#x578B;</h2>
+<pre><code>type Record&lt;K extends keyof any, T&gt; = { [P in K]  : T }
+let person: Record&lt;string, any&gt; = { name: &apos;zf&apos;, age: 11 };
+</code></pre><p>&#x5B9E;&#x73B0;map&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x7528;record&#x7C7B;&#x578B;&#x8868;&#x793A;&#x6620;&#x5C04;&#x7C7B;&#x578B;</p>
+<pre><code>function map&lt;T extends keyof any, K, U&gt;(obj: Record&lt;T, K&gt;, callback: (item: K, key: T) =&gt; U) {
+    let result = {} as Record&lt;T, U&gt;
+    for (let key in obj) {
+        result[key] = callback(obj[key], key)
+    }
+    return result
+}
+const r = map({ name: &apos;zf&apos;, age: 11 }, (item, key) =&gt; {
+    return item
+});
+</code></pre><h2 id="&#x516D;omit&#x5FFD;&#x7565;&#x5C5E;&#x6027;">&#x516D;.Omit&#x5FFD;&#x7565;&#x5C5E;&#x6027;</h2>
+<pre><code>let person = {
+    name: &apos;zhufeng&apos;,
+    age: 11,
+    address: &apos;&#x56DE;&#x9F99;&#x89C2;&apos;
+}
+type Omit&lt;T, K extends keyof T&gt; = Pick&lt;T, Exclude&lt;keyof T, K&gt;&gt;
+type OmitAddress = Omit&lt;typeof person, &apos;address&apos;&gt;
+</code></pre><blockquote>
+<p>&#x5FFD;&#x7565;person&#x4E2D;&#x7684;address&#x5C5E;&#x6027; (&#x5148;&#x6392;&#x9664;&#x6389;&#x4E0D;&#x9700;&#x8981;&#x7684;key&#xFF0C;&#x5728;&#x901A;&#x8FC7;key&#x9009;&#x51FA;&#x9700;&#x8981;&#x7684;&#x5C5E;&#x6027;)</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12.条件类型.html" class="navigation navigation-prev " aria-label="Previous page: 12.条件类型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14.装包和拆包.html" class="navigation navigation-next " aria-label="Next page: 14.装包和拆包">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13.内置类型","level":"1.1.2.3.13","depth":4,"next":{"title":"14.装包和拆包","level":"1.1.2.3.14","depth":4,"path":"2、前端基础/3、typeScript体系课/14.装包和拆包.md","ref":"2、前端基础/3、typeScript体系课/14.装包和拆包.md","articles":[]},"previous":{"title":"12.条件类型","level":"1.1.2.3.12","depth":4,"path":"2、前端基础/3、typeScript体系课/12.条件类型.md","ref":"2、前端基础/3、typeScript体系课/12.条件类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","code","splitter","livereload"],"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2、前端基础/3、typeScript体系课/13.内置类型.md","mtime":"2024-01-05T07:10:01.586Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-01-05T09:16:45.933Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
